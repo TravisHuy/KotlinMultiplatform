@@ -39,7 +39,7 @@ kotlin {
 
         androidMain.dependencies {
             implementation(compose.preview)
-            implementation("androidx.activity:activity-compose:1.9.1")
+            implementation("androidx.activity:activity-compose:1.7.1")
         }
         commonMain.dependencies {
             implementation(compose.runtime)
@@ -58,7 +58,7 @@ kotlin {
 
 android {
     namespace = "org.nhathuy.kotlinplatform"
-    compileSdk = 33 // Hoặc sử dụng libs.versions.android.compileSdk.get().toInt() nếu cần
+    compileSdk = 34 // Hoặc sử dụng libs.versions.android.compileSdk.get().toInt() nếu cần
 
     sourceSets["main"].manifest.srcFile("src/androidMain/AndroidManifest.xml")
     sourceSets["main"].res.srcDirs("src/androidMain/res")
@@ -67,7 +67,7 @@ android {
     defaultConfig {
         applicationId = "org.nhathuy.kotlinplatform"
         minSdk = 24 // Hoặc sử dụng libs.versions.android.minSdk.get().toInt() nếu cần
-        targetSdk = 33 // Hoặc sử dụng libs.versions.android.targetSdk.get().toInt() nếu cần
+        targetSdk = 34 // Hoặc sử dụng libs.versions.android.targetSdk.get().toInt() nếu cần
         versionCode = 1
         versionName = "1.0"
     }
